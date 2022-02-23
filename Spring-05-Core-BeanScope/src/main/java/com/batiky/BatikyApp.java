@@ -1,8 +1,10 @@
-package batiky;
+package com.batiky;
 
+
+import com.batiky.service.CommentService;
 import com.batiky.config.ProjectConfig;
 import com.batiky.model.Comment;
-import com.batiky.service.CommentService;
+
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
@@ -16,7 +18,12 @@ public class BatikyApp {
 
         ApplicationContext context = new AnnotationConfigApplicationContext(ProjectConfig.class);
 
-        CommentService commentService = context.getBean(CommentService.class);
-        commentService.publishComment(comment);
+        CommentService cs1 = context.getBean(CommentService.class);
+        CommentService cs2 = context.getBean(CommentService.class);
+
+        System.out.println(cs1);
+        System.out.println(cs2);
+
+        System.out.println(cs1 == cs2);
     }
 }

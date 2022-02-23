@@ -1,4 +1,4 @@
-package batiky.repository;
+package com.batiky.repository;
 
 import com.batiky.model.Comment;
 import org.springframework.stereotype.Component;

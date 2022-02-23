@@ -1,4 +1,4 @@
-package batiky.model;
+package com.batiky.model;
 
 import lombok.Data;
 

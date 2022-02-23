@@ -1,4 +1,4 @@
-package batiky.proxy;
+package com.batiky.proxy;
 
 import com.batiky.model.Comment;
 import org.springframework.beans.factory.annotation.Qualifier;
