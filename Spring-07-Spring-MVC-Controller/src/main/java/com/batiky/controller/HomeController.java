@@ -3,10 +3,10 @@ package com.batiky.controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-@Controller// Annotate the class with the @Controller stereotipe annotation
+@Controller// Annotate the class with the @Controller stereotype annotation
 public class HomeController {
 
-@RequestMapping("/home") // Use @RequestMapping annotation to assocoate the acytion with Http request path
+@RequestMapping("/home") // Use @RequestMapping annotation to associate the action with Http request path
     public String home(){
     return "home.html"; // return th HTML document name that contains the details we want the browser to display
 }
