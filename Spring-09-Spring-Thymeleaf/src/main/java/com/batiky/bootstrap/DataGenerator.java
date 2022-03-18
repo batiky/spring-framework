@@ -1,4 +1,4 @@
-package com.batiky.bootstap;
+package com.batiky.bootstrap;
 
 import com.batiky.model.Student;
 import com.github.javafaker.Faker;
